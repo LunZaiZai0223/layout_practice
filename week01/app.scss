@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'PT Serif', serif;
+  ul li {
+    list-style-type: none;
+  }
+}
+
+// colors
+$color--blue: #00b3e5;
+$color--grey: #999;
+$color--black: #000;
+$color--textBlack: #4d4d4d;
+$color--red: #FF0000;
+
+// space
+$max--width: 70.62495rem;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  // grid-template-rows: 150px;
+  // grid-auto-rows: 1fr;
+  gap: 1.5rem 1rem;
+  max-width: 70.62495rem;
+  margin: 0 auto;
+  align-items: baseline;
+  header {
+    grid-column: span 12;
+    width: 100%;
+    margin: 1.87495rem 0 0.375rem;
+    // background-color: red;
+  }
+  .header-nav {
+    grid-column: span 12;
+  }
+  .article {
+    grid-column: span 9;
+    // background-color: yellow;
+  }
+  .sidebar {
+    grid-column: span 3;
+    // height: 43%;
+    background-color: #F5F5F5;
+  }
+  .related-news {
+  	grid-column: span 12;
+  	// background-color: pink;
+  }
+}
+
+.header-upper-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: $max--width;
+  .header-wrapper .header-promotion .title{
+    color: $color--blue;
+  }
+  .header-wrapper .header-promotion .content {
+    color: $color--grey;
+  }
+  .header-logo h1 {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .header-subscribe {
+  	width: 15rem;
+  	border: 0;
+    a {
+    display: inline-block;
+    color: #fff;
+    padding: 0.45833rem;
+    text-align: center;
+    background-color: $color--red;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    }
+  }
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $max--width;
+  padding: 0.34375rem 0 0;
+  margin: 0 auto;
+  border-bottom: 1px solid $color--grey;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+  .nav-list {
+    display: flex;
+  }
+  .nav-list .nav-item {
+    display: inline-block;
+    margin: 0 1.03125rem 0 0;
+    padding: 0 0 0.51562rem;
+    width: 100%;
+    line-height: 1.3125rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 0;
+      background-color: #002837;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -3px;
+      transition: height .2s;
+    }
+    &:hover {
+      color: $color--blue;
+    }
+    &:hover:after {
+      height: .34375rem;
+    }
+  }
+  .nav-list .nav-secondary-item {
+    color: $color--blue;
+  }
+  .header-tools {
+    padding: 0 0 0.51562rem;
+    .header-tools-link {
+    color: #000;
+    margin-left: 0.45833rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    &:hover {
+      opacity: 0.5;
+      border-bottom: 1px solid black;
+    }
+    }
+  }
+}
+
+.article {
+  .article-title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 3.1875rem;
+  }
+  .article-cat {
+    font-weight: 700;
+    color: #484848;
+    margin-top: .825rem;
+  }
+  .article-cat span {
+    font-weight: 500;
+    margin-left: 0.17188rem;
+  }
+  .article-author {
+  	font-weight: 500;
+    margin: .425rem 0;
+  }
+  .article-author span {
+  	color: $color--blue;
+  	font-weight: 700;
+  }
+  .img-container {
+    width: 100%;
+  }
+  .img-container img {
+  	display: block;
+  	width: 100%;
+  	height: 100%;
+  }
+  .img-description {
+  	display: block;
+  	font-size: 0.75rem;
+  	font-weight: 700;
+  	color: #5A5A5A;
+  }
+  .img-description:nth-of-type(2) {
+    font-weight: 300;
+    margin: 0 0 .6875rem;
+  }
+  p {
+  	margin: 0 0 .6875rem;
+  	font-size: 1.0625rem;
+  	line-height: 1.5625rem;
+  	color: $color--textBlack;
+  }
+  p span {
+  	color: $color--blue;
+  }
+  p .reference {
+    font-weight: 700;
+    color: $color--textBlack;
+  }
+  .read-more-container {
+  	width: 100%;
+  	background-color: #F5F5F5;
+  	padding: .6875rem;
+  	margin: 1.375rem 0;
+  	line-height: 1.4375rem;
+  	h4 {
+  		color: #000;
+  	}
+  	h4 span {
+  	  font-weight: 700;
+  	  color: $color--blue;
+  	}
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  .side-bar-heading-list {
+    display: flex;
+    .side-bar-heading-item {
+      flex: 1;
+      padding: .45833rem;
+      text-transform: uppercase;
+      font-size: .875rem;
+      font-weight: 700;
+      color: #000;
+      display: inline-block;
+      border-right: 3px solid white;
+      cursor: pointer;
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+    .side-bar-heading-item:first-of-type {
+      background-color: $color--blue;
+      color: #fff;
+    }
+    .side-bar-heading-item:last-of-type {
+      border-right: 0;
+    }
+  }
+  .side-bar-content-item {
+      display: block;
+      padding: .6875rem;
+      border-top: 3px solid white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        color: $color--blue;
+      }
+      p {
+        font-weight: 700;
+        line-height: 1.5625rem;
+        font-size: 1.3rem;
+      }
+      p:nth-of-type(2) {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #00b2e5;
+      }
+    }
+}
+
+.related-news {
+	display: flex;
+	flex-wrap: wrap;
+	h2 {
+	  width: 100%;
+	  font-size: 1.2rem;
+	  font-weight: 400;
+	  line-height: 1.6875rem;
+	  letter-spacing: -.0375rem;
+	  margin-bottom: 0.93747rem;
+	}
+	.card-container {
+	  display: flex;
+	  gap: 1rem;
+	}
+	.card {
+	  flex: 1;
+	  display: flex;
+	  flex-direction: column;
+    cursor: pointer;
+    &:hover {
+      color: $color--blue;
+      .card-image img {
+        transform: scale(1.03);
+        filter: brightness(1.2);
+      }
+    }
+	}
+	.card-image {
+	  width: 100%;
+	  margin-bottom: .6875rem;
+    // 記得要在 img 的容器 + overflow: hidden
+    // 實際上：圖片也會變大，但是因為把大的部分也一起藏起來了，看起來就會有 zoom in 的效果
+    overflow: hidden;
+	  img {
+	  	display: block;
+	  	width: 100%;
+      transform: scale(1);
+      filter: brightness(1);
+      transition: transform .2s ease-in-out, filter .2s ease-in-out;
+	  }
+	}
+	.card-heading {
+	  font-size: 1.375rem;
+	  font-weight: 700;
+	  letter-spacing: -.0375rem;
+	  line-height: 1.5625rem;
+	}
+}
+
+footer {
+    grid-column: span 12;
+    background-color: #f5f5f5;
+    padding: 1.375rem 0;
+    margin: 1.87495rem 0 0;
+    .footer-wrapper {
+      max-width: $max--width;
+      margin: 0 auto;
+      padding-bottom: 2rem;
+      .footer-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.6875rem;
+        margin: 0 0 .93747rem;
+        letter-spacing: -.0375rem;
+      }
+      form {
+      	padding: .6875rem 0;
+      	margin: .6875rem 0;
+        label {
+          margin: 0 .6875rem .6875rem 0;
+          color: #4d4d4d;
+        }
+        input[type="email"] {
+          margin: 0 .6875rem .6875rem 0;
+          background-color: transparent;
+          border: 0;
+          border-bottom: 2px solid #000;
+          font-size: 1rem;
+          line-height: 1rem;
+          padding-left: .1875rem;
+          width: 32%;
+        }
+        input[type="submit"] {
+          background-color: #005587;
+          width: 7rem;
+          display: inline-block;
+          border: 0;
+          color: #fff;
+          padding: .45833rem;
+          min-width: 15rem;
+          border-radius: .25rem;
+          font-weight: 700;
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+      .contact-group {
+      	text-align: center;
+      	padding-bottom: .6875rem;
+      	margin-bottom: .6875rem;
+      	.contact-btn {
+      	  display: inline-block;
+      	  margin: 0 .6875rem 0 0;
+      	  padding: 0 .6875rem 0 0;
+      	  border-right: 1px solid #4d4d4d;
+      	}
+      	.contact-btn:last-of-type {
+      	  border-right: 0;
+      	  margin-right: 0;
+      	  padding-right: 0;
+      	}
+      }
+      .contact-group:first-of-type {
+        border-bottom: 1px solid #bfbfbf;
+      }
+      .footer-additional {
+        font-size: .875rem;
+        display: inline-block;
+        margin-top: 1rem;
+      }
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.375rem;
+        button {
+          border: 0;
+          background-color: #005587;
+          border-radius: .188rem;
+          color: #fff;
+          font-size: 1rem;
+          font-weight: 700;
+          padding: .45833rem;
+        }
+      }
+  }
+
