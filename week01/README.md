@@ -31,4 +31,6 @@ A: 這個時候就在 `grid` 外層容器寫 `align-items: baseline`。
 
 [範例](https://codepen.io/lun0223/pen/ExvadWm)
 
-3. 不要直接在外層將 padding 一次寫死，這樣子會讓子元素的寬度「統一」受到限制，如我這次的作樣一樣，navbar 沒辦法延展整個頁面。
+3. 不要直接在外層將 padding 一次寫死，這樣子會讓子元素的寬度「統一」受到限制，如我這次的作業一樣，navbar 沒辦法延展整個頁面。
+4. 照片的 hover Zoom in 的 CSS 就是 `transform: scale(1)` - hover -> `transform: scale(1.3)`，但是圖片的容器要 `overflow: hidden`。白話就是圖片整體確實放大了，但是超過容器的範圍被隱藏了。 [CSSのみで実装できる、画像と相性が良さそうなホバーエフェクト 15](https://www.nxworld.net/css-image-hover-effects.html)
+
