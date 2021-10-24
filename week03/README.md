@@ -3,6 +3,7 @@
 ## 參考範例以及練習成果
 1. 成品參考：https://www.theodinproject.com/home
 2. 參考大神：https://github.com/Zakarya-Mks/sassy-grid
+3. 練習結果：https://lunzaizai0223.github.io/layout_practice/week03/
 
 後來仔細看一下大神的 SCSS，發現他有先認真寫基礎設定（比方來說重新設定每個標籤的預設大小及 padding 等等），下次我練習也要逼自己這樣子先設定，因為一直右鍵看 CSS 設定其實也是蠻花時間的，一開始先寫好之後要微調再寫 CSS，這樣子應該會省下一些時間。
 
@@ -22,6 +23,6 @@
 [範例](https://codepen.io/lun0223/pen/RwZKMvp)
 
 ## 時程
-2021/10/23 2.5 小時
-2021/10/24 2.5 小時
-=> 合計 5 小時
+- 2021/10/23 2.5 小時
+- 2021/10/24 2.5 小時
+- 合計 5 小時
