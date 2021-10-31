@@ -58,8 +58,13 @@ body p {
 .form .form-content {
   display: flex;
   flex-direction: column;
-  width: clamp(450px, 100%, 600px);
+  width: clamp(550px, 100%, 600px);
   margin: 0 auto;
+}
+@media (max-width: 550px) {
+  .form .form-content {
+    width: 100%;
+  }
 }
 .form .form-content h1 {
   margin-bottom: 18px;
@@ -161,7 +166,12 @@ body p {
 
 .footer {
   margin-top: 4rem;
-  width: clamp(450px, 100%, 600px);
+  width: clamp(550px, 100%, 600px);
+}
+@media (max-width: 550px) {
+  .footer {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

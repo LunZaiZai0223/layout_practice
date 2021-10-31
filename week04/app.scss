@@ -70,7 +70,10 @@ $--bg2: linear-gradient(to left, #ffe01b 85%, transparent 85%);
   .form-content {
     display: flex;
     flex-direction: column;
-    width: clamp(450px, 100%, 600px);
+    width: clamp(550px, 100%, 600px);
+    @include handy550px {
+      width: 100%;
+    }
     margin: 0 auto;
     h1 {
       margin-bottom: 18px;
@@ -173,5 +176,8 @@ $--bg2: linear-gradient(to left, #ffe01b 85%, transparent 85%);
 }
 .footer {
   margin-top: 4rem;
-  width: clamp(450px, 100%, 600px);
+  width: clamp(550px, 100%, 600px);
+  @include handy550px {
+    width: 100%;
+  }
 }
