@@ -1,0 +1,167 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe01a;
+  color: #000;
+  line-height: 1.1;
+  font-family: "Titillium Web", sans-serif;
+}
+body h1 {
+  font-size: 3rem;
+}
+body p {
+  line-height: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid-container .form {
+  background-color: #fff;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  grid-column: span 9;
+}
+@media (max-width: 550px) {
+  .grid-container .form {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 1012px) {
+  .grid-container .form {
+    grid-column: span 12;
+  }
+}
+.grid-container .side {
+  grid-column: span 3;
+  background: no-repeat left 0 bottom 10% url("https://login.mailchimp.com/release/1.1.1ef8e29118dbd1221c5534e4d8ef817ab53bd2430/images/brand_assets/illos/art-hero-flowers.png"), linear-gradient(to left, #ffe01b 85%, transparent 85%);
+}
+@media (max-width: 1012px) {
+  .grid-container .side {
+    display: none;
+    grid-column: none;
+  }
+}
+
+.form .logo img {
+  width: 38px;
+  height: 38px;
+  margin: 12px;
+}
+.form .form-content {
+  display: flex;
+  flex-direction: column;
+  width: clamp(450px, 100%, 600px);
+  margin: 0 auto;
+}
+.form .form-content h1 {
+  margin-bottom: 18px;
+}
+.form .form-content p {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+.form .form-content .input-wrapper label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.form .form-content .input-wrapper input {
+  margin-bottom: 24px;
+  border-radius: 2px;
+  border: 1px solid rgba(36, 28, 21, 0.3);
+  background-color: #fff;
+  padding: 0 15px;
+  font-size: 1.7rem;
+  min-height: 47px;
+  line-height: 20px;
+  display: inline-block;
+  width: clamp(50px, 100%, 600px);
+  outline: none;
+}
+.form .form-content .input-wrapper input:focus {
+  outline: none;
+  border: 1px solid #007c89;
+  box-shadow: inset 0 0 0 1px #007c89;
+}
+.form .form-content .password-rules {
+  display: flex;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+.form .form-content .password-rules .container {
+  flex: 1;
+  line-height: 1.5rem;
+}
+.form .form-content .password-rules .container li:before {
+  content: "•";
+  color: #007c89;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+}
+.form .form-content .password-rules .container span {
+  position: relative;
+}
+.form .form-content .sign-up-container {
+  display: flex;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1012px) {
+  .form .form-content .sign-up-container {
+    flex-wrap: wrap;
+  }
+}
+.form .form-content .sign-up-container input[type=submit] {
+  border: 1px solid #dedddc;
+  color: #bdbbb9;
+  background-color: transparent;
+  padding: 0 42px;
+  margin-right: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+@media (max-width: 1012px) {
+  .form .form-content .sign-up-container input[type=submit] {
+    order: 2;
+    width: 100%;
+    padding: 0.8rem 2rem;
+    margin-bottom: 1rem;
+  }
+}
+.form .form-content .sign-up-container .checkbox-container {
+  display: flex;
+}
+@media (max-width: 1012px) {
+  .form .form-content .sign-up-container .checkbox-container {
+    order: 1;
+    margin-bottom: 1.5rem;
+  }
+}
+.form .form-content .sign-up-container .checkbox-container input[type=checkbox] {
+  margin-right: 0.5rem;
+}
+.form .form-content .sign-up-container .checkbox-container label {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.form .form-content .infor {
+  margin-bottom: 8px;
+}
+
+.footer {
+  margin-top: 4rem;
+  width: clamp(450px, 100%, 600px);
+}
+
+/*# sourceMappingURL=app.css.map */
