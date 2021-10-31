@@ -8,3 +8,4 @@
 1. 2021/10/12 [week01](https://lunzaizai0223.github.io/layout_practice/week01/) (補上週沒做的)
 2. 2021/10/17 [week02](https://lunzaizai0223.github.io/MyLibrary/) 就拿剛好完成的圖書館專案吧 XD
 3. 2021/10/24 [week03](https://lunzaizai0223.github.io/layout_practice/week03/)
+4. 2021/10/31 [week04](https://lunzaizai0223.github.io/layout_practice/week04/)

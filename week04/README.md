@@ -1,7 +1,7 @@
 # week 04
 這次練習參考 https://login.mailchimp.com/signup/
 ## 練習結果
-練習結果網址：
+練習結果網址：https://lunzaizai0223.github.io/layout_practice/week04/
 ## 學到了什麼？
 1. linear-gradient 係屬於 `background-image` 的設定範圍，所以用 `background-color` 會無效
 2. linear-gradient (往哪裡, 顏色1[要填顏色到多少，可用%], 顏色2[要填顏色到多少，可用%])
