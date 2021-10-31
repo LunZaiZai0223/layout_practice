@@ -15,8 +15,8 @@ body {
     line-height: 24px;
   }
 }
-$--bg1: no-repeat left 0 bottom 10% url('https://login.mailchimp.com/release/1.1.1ef8e29118dbd1221c5534e4d8ef817ab53bd2430/images/brand_assets/illos/art-hero-flowers.png');
-$--bg2: linear-gradient(to left, #ffe01b 85%, transparent 85%);
+$bg1: no-repeat bottom 10% left 0 url('https://login.mailchimp.com/release/1.1.1ef8e29118dbd1221c5534e4d8ef817ab53bd2430/images/brand_assets/illos/art-hero-flowers.png');
+$bg2: linear-gradient(to left, #ffe01b 85%, transparent 85%);
 
 @mixin desktop1012px {
   @media (max-width: 1012px) {
@@ -48,7 +48,7 @@ $--bg2: linear-gradient(to left, #ffe01b 85%, transparent 85%);
   }
   .side {
     grid-column: span 3; 
-    background: $--bg1, $--bg2;
+    background: $bg1, $bg2;
     @include desktop1012px {
       display: none;
       grid-column: none;

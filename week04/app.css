@@ -41,7 +41,7 @@ body p {
 }
 .grid-container .side {
   grid-column: span 3;
-  background: no-repeat left 0 bottom 10% url("https://login.mailchimp.com/release/1.1.1ef8e29118dbd1221c5534e4d8ef817ab53bd2430/images/brand_assets/illos/art-hero-flowers.png"), linear-gradient(to left, #ffe01b 85%, transparent 85%);
+  background: no-repeat bottom 10% left 0 url("https://login.mailchimp.com/release/1.1.1ef8e29118dbd1221c5534e4d8ef817ab53bd2430/images/brand_assets/illos/art-hero-flowers.png"), linear-gradient(to left, #ffe01b 85%, transparent 85%);
 }
 @media (max-width: 1012px) {
   .grid-container .side {
