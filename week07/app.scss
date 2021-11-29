@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(237,242,248);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+  img {
+    display: block;
+  }
+}
+@mixin desktop {
+  @media(max-width: 1024px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media(max-width: 768px) {
+    @content;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // 根據格子的內容決定最小的高度
+  grid-template-rows: repeat(2, min-content);
+  gap: 20px;
+  max-width: 1150px;
+  margin: 5rem auto;
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    width: 95%;
+  }
+  @include mobile {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+.card-1 {
+  grid-column: 1/3;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 5%;
+  @include mobile {
+    grid-column: unset;
+  }
+}
+.card-2 {
+  grid-column: 3/4;
+  background-color: hsl(217, 19%, 35%);
+  @include mobile {
+    grid-column: unset;
+  }
+}
+.card-3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #ffff;
+  @include mobile {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+.card-4 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  background-color: hsl(217, 19%, 35%);
+  @include mobile {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+.card-5 {
+  grid-column: 4/5;
+  grid-row: -1/1;
+  background-color: #ffff;
+  @include desktop {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  @include mobile {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+.card {
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px 40px;
+}
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(0, 0%, 81%);
+  margin-bottom: 10px;
+  .name {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .title {
+    opacity: 50%;
+  }
+  .avatar {
+    width: 32px;
+    height: 32px;
+  }
+  .avatar img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+}
+.text .header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text .content {
+  color: #222;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+.card-1, .card-2, .card-4 {
+  .text .header {
+    color: #ffff; 
+  }
+  .text .content {
+    color: hsl(0, 0%, 81%);
+  }
+}
+.card-3, .card-5 {
+  .card-name {
+    color: #222;
+  }
+  .title {
+    opacity: 50%;
+  }
+}
