@@ -41,6 +41,9 @@
 
 看起來就要變成 1 x 1 的樣子，這個時候可以在外層容器使用 `grid-template-columns: repeat(auto-fit, minmax(50%, 1fr))` + 每個子元素把 `grid-column: unset` 及 `grid-row: unset`（`unset` 如果父層有對應的屬性就會繼承，如果沒有的話就恢復該屬性的預設值）。`grid-template-columns: repeat(auto-fit, minmax(50%, 1fr))` 會自己計算需要幾格 columns，每個格子不會 < `minmax(最小, 最大)` 也不會 > 最大，藉由這個指令可以讓 grid 變成 1 x 1。
 
+## 參考資料
+[Testimonials Grid Section using CSS grid | FrontendMentor challange |](https://www.youtube.com/watch?v=XrcUWxFRUd4)
+
 ## 時程
 
 - 2021/11/29 2 小時
