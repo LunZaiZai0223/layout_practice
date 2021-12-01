@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./app.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div class="cardContainer">
+      <div class="card">
+        <div class="header">
+          sign up
+        </div>
+        <div class="cardContent">
+          <div class="inputWrapper">
+            <input type="text" id="username" data-username placeholder="Username">
+            <span><i class="far fa-user"></i></span>
+          </div>
+          <div class="inputWrapper">
+            <input type="password" id="password" data-password placeholder="Password">
+            <span><i class="fas fa-unlock-alt"></i></span>
+          </div>
+        </div>
+        <div class="buttonGroup">
+          <input type="submit" value="GO!" data-submit>
+        </div>
+        <div class="cardFooter">I am already a member<span>SIGN IN</span></div>
+      </div>
+    </div>
+    <p style="font-style:italic;">Design Credit: <a href="https://www.behance.net/gallery/62757057/15-Login-UI-Templates">https://www.behance.net/gallery/62757057/15-Login-UI-Templates</a></p>
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://kit.fontawesome.com/f7fe694de6.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

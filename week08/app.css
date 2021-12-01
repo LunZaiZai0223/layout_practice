@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #3564fc;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.cardContainer {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  padding: 60px 40px 20px;
+  color: #e5e4e9;
+  background-color: #2a2a2e;
+  min-width: 360px;
+  -webkit-box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.card .header {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cardContent {
+  margin-bottom: 2rem;
+}
+
+.inputWrapper {
+  margin-bottom: 1rem;
+  outline: none;
+  position: relative;
+}
+
+.inputWrapper input {
+  color: #fff;
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c9c8cd;
+  padding-bottom: 3px;
+  width: 100%;
+}
+
+.inputWrapper input::-webkit-input-placeholder {
+  color: #c9c8cd;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+.inputWrapper input:-ms-input-placeholder {
+  color: #c9c8cd;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+.inputWrapper input::-ms-input-placeholder {
+  color: #c9c8cd;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+.inputWrapper input::placeholder {
+  color: #c9c8cd;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+.inputWrapper input:focus {
+  outline: 0.3px solid #c9c8cd;
+}
+
+.inputWrapper span {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}
+
+.buttonGroup {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.buttonGroup input {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 10px;
+  width: 100%;
+  background-color: #345ffd;
+  border: none;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.buttonGroup:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 30px;
+  background-color: #26262e;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  top: 45%;
+  left: 15%;
+}
+
+.cardFooter {
+  font-style: italic;
+}
+
+.cardFooter span {
+  font-style: normal;
+  margin-left: 6px;
+  color: #3869f9;
+  font-weight: bold;
+}
+/*# sourceMappingURL=app.css.map */
