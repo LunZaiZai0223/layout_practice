@@ -12,4 +12,4 @@
 5. 2021/11/07 [week05](https://lunzaizai0223.github.io/Tic-Tac-Toe/)
 6. 2021/11/14 [week06](https://lunzaizai0223.github.io/THE_F2E_3rd_Week01/)
 7. 2021/11/29 [week07](https://lunzaizai0223.github.io/layout_practice/week07/)（補 11/15-11/21）
-
+8. 2021/12/01 [week08](https://lunzaizai0223.github.io/layout_practice/week08/)（補 11/22-11/28）
