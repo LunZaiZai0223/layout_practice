@@ -5,14 +5,16 @@
           box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   width: 100%;
   height: 100%;
 }
 
 body {
   background-color: #3564fc;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .cardContainer {
@@ -150,5 +152,6 @@ body {
   margin-left: 6px;
   color: #3869f9;
   font-weight: bold;
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */

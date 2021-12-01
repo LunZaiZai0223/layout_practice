@@ -8,6 +8,7 @@ const header = document.querySelector('.header');
 let isSignUp = true;
 
 submitBtn.addEventListener('click', handleClick);
+cardFooter.addEventListener('click', handleClickForCardFooter);
 
 function changeText (cardFooter, header) {
   if (isSignUp) {
@@ -64,5 +65,13 @@ function handleClick () {
       passwordInput: passwordInput
     };
     fetchData(isSignUp, obj);
+  }
+}
+function handleClickForCardFooter (event) {
+  if (event.target.nodeName === 'SPAN') {
+    changeState();
+    changeText(cardFooter, header);
+    userNameInput.value = '';
+    passwordInput.value = '';
   }
 }
