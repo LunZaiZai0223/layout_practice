@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+.container {
+  width: 100%;
+  height: 100vh;
+  font-family: "Barlow Semi Condensed";
+  font-size: 18px;
+}
+
+body {
+  background-color: #0d192b;
+  padding-top: 25px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  max-width: 375px;
+  background-color: #14253d;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.card .image-wrapper {
+  position: relative;
+  padding-top: 100%;
+  cursor: pointer;
+}
+
+.card .image-wrapper:hover:before {
+  content: url(./images/icon-view.svg);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 247, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .image-wrapper img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card .content {
+  margin: 1rem 0;
+}
+
+.card .content .title {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.card .content .title:hover {
+  color: #00fff7;
+}
+
+.card .content .text {
+  color: #8bacda;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.card .content .price-date-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .content .price-date-info-container .price-wrapper .price {
+  color: #00fff7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.card .content .price-date-info-container .info-wrapper .date {
+  color: #8bacda;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  font-weight: 400;
+}
+
+.card .author-wrapper {
+  border-top: 1px solid #2f415b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  padding-top: 1rem;
+}
+
+.card .author-wrapper .avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.card .author-wrapper .avatar img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.card .author-wrapper .author {
+  color: #8bacda;
+}
+
+.card .author-wrapper .author span {
+  color: white;
+  cursor: pointer;
+}
+
+.card .author-wrapper .author span:hover {
+  color: #00fff7;
+}
+
+.attribution {
+  background-color: white;
+  margin-top: 25px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,150 @@
+$main-bg-color: hsl(217, 54%, 11%);
+$main-card-color: hsl(216, 50%, 16%);
+$card-underline-color: hsl(215, 32%, 27%);
+$card-white-color: hsl(0, 0%, 100%);
+$card-soft-blue-color: hsl(215, 51%, 70%);
+$card-cyan-color: hsl(178, 100%, 50%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+.container {
+  width: 100%;
+  height: 100vh;
+  font-family: "Barlow Semi Condensed";
+  font-size: 18px;
+}
+
+body {
+  background-color: $main-bg-color;
+  padding-top: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 375px;
+  background-color: $main-card-color;
+  padding: 1rem;
+  border-radius: 10px;
+
+  .image-wrapper {
+    position: relative;
+    padding-top: 100%;
+    cursor: pointer;
+
+    &:hover {
+      &:before {
+        content: url(./images/icon-view.svg);
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 255, 247, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .image-wrapper img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    margin: 1rem 0;
+  }
+
+  .content .title {
+    font-weight: 600;
+    color: $card-white-color;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    &:hover {
+      color: $card-cyan-color;
+    }
+  }
+
+  .content .text {
+    color: $card-soft-blue-color;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .content .price-date-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content .price-date-info-container .price-wrapper .price {
+    color: $card-cyan-color;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+  }
+
+  .content .price-date-info-container .info-wrapper .date {
+    color: $card-soft-blue-color;
+    display: flex;
+    gap: 5px;
+    font-weight: 400;
+  }
+
+  .author-wrapper {
+    border-top: 1px solid $card-underline-color;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 1rem;
+  }
+
+  .author-wrapper .avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .author-wrapper .avatar img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid $card-white-color;
+  }
+
+  .author-wrapper .author {
+    color: $card-soft-blue-color;
+    span {
+      color: $card-white-color;
+      cursor: pointer;
+      &:hover {
+        color: $card-cyan-color;
+      }
+    }
+  }
+}
+
+.attribution {
+  background-color: $card-white-color;
+  margin-top: 25px;
+}
